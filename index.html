@@ -61,25 +61,59 @@
             </p>
 
             <!-- FORMULARI DE CAPTACIÓ DE LEADS (FORMSPREE) -->
-            <form action="https://formspree.io/f/mpppvoyq" method="POST" class="max-w-md mx-auto bg-slate-900 border border-slate-800 p-6 md:p-8 rounded-2xl shadow-2xl">
-                <div class="mb-4 text-left">
-                    <label for="email" class="block text-sm font-medium text-slate-200 mb-2">
-                        Sol·licita una mostra real per als teus clients
+            <form action="https://formspree.io/f/tu_form_id" method="POST" class="max-w-lg mx-auto bg-slate-900 border border-slate-800 p-6 md:p-8 rounded-2xl shadow-2xl text-left space-y-5">
+                
+                <!-- Camp 1: Correu del client -->
+                <div>
+                    <label for="email" class="block text-sm font-medium text-slate-200 mb-1.5">
+                        1. El teu correu electrònic professional
                     </label>
                     <input 
                         type="email" 
                         id="email"
-                        name="email" 
+                        name="email_client" 
                         required 
-                        class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition" 
-                        placeholder="el-teu-nom@empresa.com"
+                        class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition text-sm" 
+                        placeholder="nom@la-teva-empresa.com"
                     >
                 </div>
-                <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 rounded-lg transition cursor-pointer">
-                    Unir-me a la Llista Prioritària
+
+                <!-- Camp 2: Què ven el client -->
+                <div>
+                    <label for="producte" class="block text-sm font-medium text-slate-200 mb-1.5">
+                        2. Què ven la teva empresa? (1 frase)
+                    </label>
+                    <input 
+                        type="text" 
+                        id="producte"
+                        name="que_ven_el_client" 
+                        required 
+                        class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition text-sm" 
+                        placeholder="Ex: Programari per automatitzar factures logístiques"
+                    >
+                </div>
+
+                <!-- Camp 3: Les 3 empreses objectiu a investigar -->
+                <div>
+                    <label for="objectius" class="block text-sm font-medium text-slate-200 mb-1.5">
+                        3. Noms o webs de 3 empreses a qui vulguis vendre
+                    </label>
+                    <textarea 
+                        id="objectius"
+                        name="empreses_objectiu" 
+                        rows="2"
+                        required 
+                        class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition text-sm" 
+                        placeholder="Ex: www.empresa1.com, www.empresa2.es, Empresa 3 SL"
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 rounded-lg transition cursor-pointer shadow-lg shadow-indigo-600/20">
+                    Generar els meus 3 Correus de Prova Gratuïts
                 </button>
-                <p class="text-xs text-slate-400 mt-3">
-                    Sense compromís. Rebràs 3 exemples de correus generats en viu per al teu sector.
+                
+                <p class="text-xs text-slate-400 text-center">
+                    El nostre motor analitzarà aquestes 3 empreses i t'enviarà els esborranys al teu correu en menys de 24h.
                 </p>
             </form>
         </section>
